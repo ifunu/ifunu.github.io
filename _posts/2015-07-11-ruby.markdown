@@ -1,0 +1,72 @@
+---
+layout: post
+title: "Hello, User!"
+date: 2015-05-25
+categories:
+---
+####语法
+###运算
+
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+Exponentiation (**)
+Modulo (%)
+
+The (print) command just takes whatever you give it and prints it to the screen. (puts) (for "put string") is slightly different: it adds a new (blank) line after the thing you want it to print. You use them like this:
+
+The *'.length'* Method
+
+The *'.reverse'* Method
+
+*'.upcase'* & *'.downcase'*
+
+*'.capitalize'*
+
+
+=begin
+注释啊
+=end
+###逻辑控制
+*if*
+if condition
+  # Do something!
+end
+在ruby，可以简写为
+expression if boolean
+···
+puts "It's true!" if true
+···
+boolean ? Do this if true: Do this if false
+···
+puts 3 < 4 ? "3 is less than 4!" : "3 is not less than 4."
+···
+while and until
+
+for
+···
+for i in 1..20
+puts i
+end
+
+i = 20
+loop do
+  i -= 1
+  print "#{i}"
+  break if i <= 0
+end
+···
+
+case language
+  when "JS" then puts "Websites!"
+  when "Python" then puts "Science!"
+  when "Ruby" then puts "Web apps!"
+  else puts "I don't know!"
+end
+
+*'.each'* method
+···
+object.each { |item| # Do something }
+object.each do |item| # Do something end
+···

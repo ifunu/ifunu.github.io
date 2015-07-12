@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Hello, User!"
+date: 2015-05-25
+categories:
+---
+保留字为组成statement的词汇
+<table class="table table-bordered table-striped table-condensed">
+    <tr>
+        <td>BEGIN</td>
+        <td>代码，以一对｛｝括起，在程序执行前执行</td>
+    </tr>
+    <tr>
+        <td>END</td>
+        <td>代码，以一对｛｝括起，在程序完成后执行</td>
+    </tr>
+    
+
+
+</table>
