@@ -1,9 +1,8 @@
 ---
-layout：post
-title："git 本地修改及文件上传"
-date：2015-07-12
+layout: post
+title: "git 本地修改及文件上传"
+date: 2015-07-12
 ---
-
 初次使用时，先创建一个新的文件夹以将要的仓库名上传。然后在bash命令下cd 打开新建的文件夹. 
 ~ps:你的github账户要有同名文件夹。~
 ...
