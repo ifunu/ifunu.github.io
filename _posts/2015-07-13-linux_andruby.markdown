@@ -12,18 +12,30 @@ date: 2015-07-13
 sudo gedit /etc/apt/sources.list
 
 先备份一下，在把
+
 ```
 deb http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse
+
 deb-src http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse
+
 deb http://mirrors.163.com/ubuntu/ raring-security universe main multiverse restricted
+
 deb-src http://mirrors.163.com/ubuntu/ raring-security universe main multiverse restricted
+
 deb http://mirrors.163.com/ubuntu/ raring-updates universe main multiverse restricted
+
 deb http://mirrors.163.com/ubuntu/ raring-proposed universe main multiverse restricted
+
 deb-src http://mirrors.163.com/ubuntu/ raring-proposed universe main multiverse restricted
+
 deb http://mirrors.163.com/ubuntu/ raring-backports universe main multiverse restricted
+
 deb-src http://mirrors.163.com/ubuntu/ raring-backports universe main multiverse restricted
+
 deb-src http://mirrors.163.com/ubuntu/ raring-updates universe main multiverse restricted
+
 ```
+
 然后更新：
 
 sudo get-apt update
@@ -33,6 +45,7 @@ sudo get-apt update
 ```
 $ sudo apt-get install -y build-essential openssl curl libcurl3-dev libreadline6 libreadline6-dev git zlib1g zlib1g-dev libssl-dev libyaml-dev libxml2-dev libxslt-dev autoconf automake libtool imagemagick libmagickwand-dev libpcre3-dev libsqlite3-dev libmysql-ruby libmysqlclient-dev
 ```
+
 安装RVM
 
 ```
@@ -54,9 +67,12 @@ $ sed -i -e 's/ftp\.ruby-lang\.org\/pub\/ruby/ruby\.taobao\.org\/mirrors\/ruby/g
 ```
 
 检验一下
+
 ```$ rvm -v  ```
+
 3. 安装Ruby
 要先执行一下，不然下面的流程跑不动。
+
 ```
 $ rvm install ruby 
 //安装完，看一下安装的版本
@@ -70,7 +86,9 @@ $ ruby -v
 $ gem source -r https://rubygems.org/  
 $ gem source -a http://ruby.taobao.org  
 ```
+
 下面代码安装rails
+
 ```
 $ gem install rails
 //若报错相关信息nokogiri-1.6.5.gem，缺少这个包，或者这个包有问题安装不上，执行下边命令手动安装nokogiri
@@ -87,6 +105,7 @@ $ rails -versions
 ```
 
 最后检查工具是否齐全
+
 ```
 ruby -v
 rails -v
